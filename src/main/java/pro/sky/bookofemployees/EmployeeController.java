@@ -30,7 +30,7 @@ public class EmployeeController {
     @GetMapping("/remove")
     public Employee removePerson(@RequestParam(value = "firstName", required = false) String firstName,
                                  @RequestParam(value = "lastName", required = false) String lastName) {
-      return (Employee) service.removePersons(firstName, lastName);
+        return (Employee) service.removePersons(firstName, lastName);
 
     }
 
@@ -55,4 +55,5 @@ public class EmployeeController {
 
     }
 }
+
 
